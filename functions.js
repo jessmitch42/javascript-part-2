@@ -121,4 +121,6 @@ function operationMaker(userOperation) {
     return operationChoice;
 }
 
-console.log(operationMaker("subtract")(2,6)); 
+// console.log(operationMaker("subtract")(2,6)); 
+
+
