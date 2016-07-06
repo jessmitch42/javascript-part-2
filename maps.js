@@ -1,12 +1,12 @@
 function Tile(type) {
     if (this.type === "water") {
-        this.type = this.type;
+        this.type = type;
     }
     else if (this.type === "grass") {
-        this.type = this.type;
+        this.type = type;
     }
     else if (this.type === "sand") {
-        this.type = this.type;
+        this.type = type;
     }
     this.type
     function isWalkable(type) {
@@ -25,3 +25,11 @@ function Tile(type) {
     }
 }
 
+// var jess = new Tile("water");
+// console.log(jess);
+
+function Map(width, height) {
+    this.width = width;
+    this.height = height;
+    this.tile
+}
