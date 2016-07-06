@@ -55,4 +55,18 @@ function compareEmail(a, b) {
     return a.email.localeCompare(b.email);
 }
 
-console.log(students.sort(compareEmail));
+// console.log(students.sort(compareEmail));
+
+/* Exercise 3! "Create a function that can be used with 
+Array.prototype.map. This function should take a number 
+and return its square. Then, use this function with map 
+on an array of numbers to check the result."
+*/
+
+function numSquared (num) {
+    return num * num;
+}
+
+var numArray = [2, 4, 5, 7, 3];
+
+console.log(numArray.map(numSquared));
