@@ -93,4 +93,32 @@ function numSquared (object) {
     return object.num * object.num;
 }
 
-console.log(objArray.map(numSquared));
+// console.log(objArray.map(numSquared));
+
+/* Exercise 5: 
+Create a function called operationMaker that takes only 
+a string called operation as argument. This string could be 
+“add”, “subtract”, “mult” or “div”. Your function will 
+return a function that will take two numbers and return the 
+result of running operation on these numbers. 
+*/
+
+function operationMaker(userOperation) {
+    function operationChoice(num1, num2) {
+        if (userOperation === "add") {
+            return num1 + num2;
+        }
+        else if (userOperation === "subtract") {
+            return num1 - num2;
+        }
+        else if (userOperation === "mult") {
+            return num1 * num2 ;       
+        }
+        else if (userOperation === "div") {
+            return num1 / num2;
+        }
+    }
+    return operationChoice;
+}
+
+console.log(operationMaker("subtract")(2,6)); 
